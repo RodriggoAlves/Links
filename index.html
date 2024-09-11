@@ -15,8 +15,6 @@
         </section>
 
 
-
-
         <section class="button">
 
             <a class="InstagramButton" href="https://www.instagram.com/rodriggo.sx/">
@@ -65,7 +63,9 @@
                 margin: 0;
                 padding: 0;
                 border: 0;
-                background-color: black;
+                background-color: #212428;
+                box-sizing: border-box;
+                height: 100vh;
             }
 
                 /* DIVISÃO */
@@ -79,7 +79,7 @@
                 /* DIVISÃO */
 
             .ProfileUser{
-                margin-top: 2%;
+                margin-top: 3%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -126,6 +126,7 @@
                 font-size: 20px;
                 transition: transform 0.3s ease;
             }
+
             .InstagramButton:hover{
                 transform: scale(1.2);
             }
@@ -228,40 +229,62 @@
                 font-family: "Sora", sans-serif;
             }
             @media (max-width: 768px) {
-            .Copyright{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-decoration: none;
-                color: white;
-                font-family: "Sora", sans-serif;
-                text-align: center;
-            }
-            .Copyright1{
-                margin-top: 1%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-decoration: none;
-                color: white;
-                font-family: "Sora", sans-serif;
-                text-align: center;
-            }
+
+                .ProfileUser{
+                    width: 260px;
+                    height: 260px;
+                    margin-bottom: 3%;
+                }
+                
+                .Copyright{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: none;
+                    color: white;
+                    font-family: "Sora", sans-serif;
+                    text-align: center;
+                    margin-top: 15%;
+                }
+
+                .Copyright1{
+                    margin-top: 1%;
+                    margin-bottom: 1%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: none;
+                    color: white;
+                    font-family: "Sora", sans-serif;
+                    text-align: center;
+                }
 
                 .WhatsAppButton{
-                margin-top: 3%;
-                margin-bottom: 3%;
+                    width: 340px;
+                    height: 65px;
+                    margin-top: 3%;
+                    margin-bottom: 3%;
                 }
+
                 .CurriculoButton{
+                    width: 340px;
+                    height: 65px;
                     margin-top: 3%;
                 }
+
                 .GitHubButton{
+                    width: 340px;
+                    height: 65px;
                     margin-top: 3%;
                     
                 }
+
                 .InstagramButton{
                     margin-top: 3%;
+                    width: 340px;
+                    height: 65px;
                 }
+                
             }                
             
 
