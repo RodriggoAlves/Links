@@ -1,307 +1,126 @@
-<html lang="en"></html>
-
+<html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Links</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            background: url('Background.png') no-repeat center center fixed;
+            background-size: cover;
+            box-sizing: border-box;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            position: relative;
+        }
 
+        .Conteudo {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 600px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+
+        .button, .Button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 300px;
+            height: 50px;
+            border-radius: 18px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid white;
+            color: white;
+            background: transparent;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        .Footer {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            padding-top: 20px;
+        }
+
+        .Copyright, .Copyright1 {
+            font-size: 18px;
+            font-weight: 500;
+            color: #ddd;
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
     <main class="Conteudo">
-        
         <section class="User">
             <img src="User.png" alt="Imagem Do Usuário" class="ProfileUser">
         </section>
-
-
         <section class="button">
-
-            <a class="InstagramButton"  href="https://www.instagram.com/rodriggo.sx/">
+            <a class="InstagramButton" href="https://www.instagram.com/rodriggo.sx/">
                 <img class="icon" src="Instagram.png" alt="Instagram Icon">
-                instagram
+                Instagram
             </a>
-
         </section>
-
         <section class="Button">
-
             <a class="GitHubButton" href="https://github.com/RodriggoAlves">
                 <img class="icon" src="MeuGithub.png" alt="GitHub Icon">
                 GitHub
             </a>
-
         </section>
-
         <section class="Button">
-
-            <a class="CurriculoButton" href="https://www.linkedin.com/in/rodriggoalves/">
-                <img class="icon" src="MeuCurriculo.png" alt="Curriculo Icon">
-                Curriculo
+            <a class="MensagensButton" href="https://www.linkedin.com/in/rodriggoalves/">
+                <img class="icon" src="MeuCurriculo.png" alt="Mensagens Icon">
+                Mensagens
             </a>
-
         </section>
-
         <section class="Button">
-
             <a class="WhatsAppButton" href="https://api.whatsapp.com/send/?phone=5562981917921&text&type=phone_number&app_absent=0">
                 <img class="icon" src="WhastApp.png" alt="WhatsApp Icon">
                 WhatsApp
             </a>
-
         </section>
-
-        <section>
-            <a href="" class="Copyright">© Copyright 2024 Rodriggo Alves. Todos os direitos reservados.</a>
-        </section>
-
-        <section>
-            <a href="" class="Copyright1">Politica de privacidade </a>
-        </section>
-
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
-
-            body{
-                margin: 0;
-                padding: 0;
-                border: 0;
-                background-color: #212428;
-                box-sizing: border-box;
-                height: 100vh;
-            }
-            .icon{
-                text-align: center;
-                margin-right: 2%;
-                margin-top: 1%;
-                margin-bottom: 1%;
-            }
-
-                /* DIVISÃO */
-
-            .User{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-                /* DIVISÃO */
-
-            .ProfileUser{
-                margin-top: 3%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 313px;
-                height: 313px;
-                transition: transform 0.3s ease;
-                border-radius: 300px;
-                border-color: white;
-                border-width: 2px;
-                border-style: solid;
-            }
-
-            .ProfileUser:hover{
-                transform: scale(1.2);
-            }
-
-                /* DIVISÃO */
-
-            .button{
-                display: flex;
-                align-items: center;
-                justify-content: center;  
-            }
-
-                /* DIVISÃO */
-
-            .InstagramButton{
-                border-width: 1.5px;
-                margin-left: 1%;
-                margin-right: 1%;
-                margin-top: 5%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: white;
-                width: 431px;
-                height: 65px;
-                border-radius: 30px;
-                border-style: solid;
-                border-color: white;
-                text-decoration: none;
-                font-family: "Montserrat", system-ui;
-                font-weight: 300;
-                font-size: 20px;
-                transition: transform 0.3s ease;
-            }
-
-            .InstagramButton:hover{
-                transform: scale(1.2);
-            }
-
-                /* DIVISÃO */
-
-            .GitHubButton{
-                border-width: 1.5px;
-                margin-left: 1%;
-                margin-right: 1%;
-                margin-top: 1%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: white;
-                width: 431px;
-                height: 65px;
-                border-radius: 30px;
-                border-style: solid;
-                border-color: white;
-                text-decoration: none;
-                font-family: "Montserrat", system-ui;
-                font-weight: 300;
-                font-size: 20px;
-                transition: transform 0.3s ease;
-            }
-
-            .GitHubButton:hover{
-                transform: scale(1.2);
-            }
-
-                /* DIVISÃO */
-
-            .CurriculoButton{
-                border-width: 1.5px;
-                margin-left: 1%;
-                margin-right: 1%;
-                margin-top: 1%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: white;
-                width: 431px;
-                height: 65px;
-                border-radius: 30px;
-                border-style: solid;
-                border-color: white;
-                text-decoration: none;
-                font-family: "Montserrat", system-ui;
-                font-weight: 300;
-                font-size: 20px;
-                transition: transform 0.3s ease;
-            }
-
-            .CurriculoButton:hover{
-                transform: scale(1.2);
-            }
-
-                /* DIVISÃO */
-
-            .WhatsAppButton{
-                border-width: 1.5px;
-                margin-top: 1%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: white;
-                width: 431px;
-                height: 65px;
-                border-radius: 30px;
-                border-style: solid;
-                border-color: white;
-                text-decoration: none;
-                font-family: "Montserrat", system-ui;
-                font-weight: 300;
-                font-size: 20px;
-                
-                transition: transform 0.3s ease;
-            }
-            .WhatsAppButton:hover{
-                transform: scale(1.2);
-            }
-
-            .Copyright{
-                margin-top: 2%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-decoration: none;
-                color: white;
-                font-family: "Sora", sans-serif;
-            }
-            .Copyright1{
-                margin-top: 0.5%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-decoration: none;
-                color: white;
-                font-family: "Sora", sans-serif;
-            }
-            @media (max-width: 768px) {
-
-                .ProfileUser{
-                    width: 260px;
-                    height: 260px;
-                    margin-bottom: 3%;
-                }
-                
-                .Copyright{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    text-decoration: none;
-                    color: white;
-                    font-family: "Sora", sans-serif;
-                    text-align: center;
-                    margin-top: 15%;
-                }
-
-                .Copyright1{
-                    margin-top: 1%;
-                    margin-bottom: 1%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    text-decoration: none;
-                    color: white;
-                    font-family: "Sora", sans-serif;
-                    text-align: center;
-                }
-
-                .WhatsAppButton{
-                    width: 340px;
-                    height: 65px;
-                    margin-top: 3%;
-                    margin-bottom: 3%;
-                }
-
-                .CurriculoButton{
-                    width: 340px;
-                    height: 65px;
-                    margin-top: 3%;
-                }
-
-                .GitHubButton{
-                    width: 340px;
-                    height: 65px;
-                    margin-top: 3%;
-                    
-                }
-
-                .InstagramButton{
-                    margin-top: 3%;
-                    width: 340px;
-                    height: 65px;
-                }
-                
-            }                
-            
-
-
-        </style>
-
     </main>
+    <div class="Footer">
+        <p class="Copyright">&copy; Copyright 2024 Rodriggo Alves. Todos os direitos reservados.</p>
+        <p class="Copyright1">Política de privacidade</p>
+    </div>
 </body>
-
 </html>
